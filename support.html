@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Transi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logoNewW.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about-us.html">ABOUT US</a>
+            <a href="support.html">SUPPORT</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+
+        <div class="menu-mobile" id="mobile_button">
+            <svg width="40" height="40" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H19M1 6H19M1 11H19" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>    
+        </div>
+
+        <div class="mobile" id="mobile">
+            <span class="close" id="close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            </span>
+            <div class="options">
+                <img src="assets/images/logoNewW.png" alt="Logo" width="200px">
+                <div class="links">
+                    <a href="index.html">HOME</a>
+                    <a href="about-us.html">ABOUT US</a>
+                    <a href="support.html">SUPPORT</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="support fade">
+        <h2>Support</h2>
+        <form class="contact-form" action="https://formsubmit.co/lisandromoraperez06@gmail.com" method="POST">
+            <div class="input-group">
+                <input type="text" placeholder="Name" name="name">
+                <input type="text" placeholder="Last Name" name="last_name">
+            </div>
+            <input type="email" placeholder="Email" name="email">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Additional details"></textarea>
+            <input type="hidden" name="_next" value="https://transiapp.com/">
+            <div class="button">
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.revealUp', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+        });
+        sr.reveal('.revealDown', {
+            duration: 2000,
+            origin: 'top',
+            distance: '100px'
+        });
+        sr.reveal('.revealRight', {
+            duration: 2000,
+            origin: 'right',
+            distance: '100px'
+        });
+        sr.reveal('.revealLeft', {
+            duration: 2000,
+            origin: 'left',
+            distance: '100px'
+        });
+        sr.reveal('.fade', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '0px',
+            opacity: 0
+        });
+    </script>
+</body>
+</html>
